@@ -1,0 +1,47 @@
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  bucketCloudformationAdmin:
+    Type: 'AWS::S3::Bucket'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 42f888c5-d382-48f9-a799-78490b112202
+  vpcProyecto:
+    Type: 'AWS::EC2::VPC'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 6f47fdf7-d429-410a-b4f4-6a3e05251854
+  adminCloudformation:
+    Type: 'AWS::IAM::Role'
+    Properties: {}
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: bc364013-bee5-4380-974e-85a32d92cdf1
+Metadata:
+  'AWS::CloudFormation::Designer':
+    6f47fdf7-d429-410a-b4f4-6a3e05251854:
+      size:
+        width: 150
+        height: 150
+      position:
+        x: 170
+        'y': 110
+      z: 1
+      embeds: []
+    42f888c5-d382-48f9-a799-78490b112202:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 380
+        'y': 110
+      z: 0
+      embeds: []
+    bc364013-bee5-4380-974e-85a32d92cdf1:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 70
+        'y': 110
+      z: 0
+      embeds: []
