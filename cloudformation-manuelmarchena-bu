@@ -11,9 +11,18 @@ Resources:
       'AWS::CloudFormation::Designer':
         id: 6f47fdf7-d429-410a-b4f4-6a3e05251854
   adminCloudformation:
-    Type: 'AWS::IAM::Role'
-    Properties: {}
-    Metadata:
+          Type: 'AWS::IAM::Policy'
+          Properties:
+          PolicyName: root
+          PolicyDocument:
+          Version: "2012-10-17"
+          Statement:
+          - Effect: Allow
+          Action: '*'
+         Resource: '*'
+          Roles:
+            - !Ref RootRole
+            Metadata:
       'AWS::CloudFormation::Designer':
         id: bc364013-bee5-4380-974e-85a32d92cdf1
 Metadata:
@@ -45,3 +54,5 @@ Metadata:
         'y': 110
       z: 0
       embeds: []
+      
+
